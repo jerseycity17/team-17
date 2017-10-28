@@ -1,4 +1,6 @@
 const bcrypt = require('bcrypt-nodejs');
+//const models = require('../models');
+
 
 module.exports = (sequelize, DataTypes) => {
   const User = sequelize.define('user', {
@@ -43,12 +45,13 @@ module.exports = (sequelize, DataTypes) => {
         notEmpty: true,
       },
     },
+    unitCompleted: {
+      type: DataTypes.INTEGER,
+      validate: {
+      },
+    },
   });
-
-  User.associate = (models) => {
-    models.User.hasMany(models.Post);
-  }
-
+  //models.User.hasMany(models.Challenge);
   User.beforeCreate((user) =>
     new sequelize.Promise((resolve) => {
       bcrypt.hash(user.password, null, null, (err, hashedPassword) => {

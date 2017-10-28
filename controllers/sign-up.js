@@ -20,6 +20,7 @@ module.exports = {
       username: req.body.username,
       email: req.body.email,
       password: req.body.password,
+      unitCompleted: "0",
     }).then((user) => {
       req.login(user, () =>
         res.redirect('/profile')

@@ -21,12 +21,9 @@ module.exports = {
       where: {
         username: req.params.username,
       },
-      include: [{
-        model: models.Post,
-      }],
     }).then((user) => {
       if(user) {
-        res.render('users/single', { user: user, allPosts: user.posts });
+        res.render('users/single', { user: user});
       } else {
         res.redirect('/users');
       }
