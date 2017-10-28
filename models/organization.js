@@ -1,4 +1,5 @@
 module.exports = (sequelize, DataTypes) => {
+	//Organization table
   const Organization = sequelize.define('organization', {
   	organizationName: {
   		type: DataTypes.STRING,

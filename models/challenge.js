@@ -1,4 +1,5 @@
 module.exports = (sequelize, DataTypes) => {
+  //challenges table
   const Challenges = sequelize.define('challenges', {
     Name: {
       type: DataTypes.STRING,

@@ -32,5 +32,14 @@
     + Uncomment the corresponding code in `app.js`
     + Add a `/views` folder and the appropriate templates
 
+##Database
 
+- The Database has a User Table with the primary key of User_id and a foreign key of challenge_id which tells them how many degrees they have for each challenge, with a maximum.
 
+- The Organization table has a primary key of organization_id and also a secondary key of challenge id.
+
+-The Challenge table has a primary key of Challenge_id and a foreign key of organization_id
+
+##Authentication
+
+-The User login authenticates whether the user exists in the database.

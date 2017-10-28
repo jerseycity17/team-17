@@ -51,7 +51,7 @@ module.exports = (sequelize, DataTypes) => {
       },
     },
   });
-  //models.User.hasMany(models.Challenge);
+  //hashes the password, so the password isn't a string
   User.beforeCreate((user) =>
     new sequelize.Promise((resolve) => {
       bcrypt.hash(user.password, null, null, (err, hashedPassword) => {
