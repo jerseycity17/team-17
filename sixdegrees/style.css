@@ -28,7 +28,7 @@ input[type=text], input[type=password] {
 
 /* Set a style for all buttons */
 button {
-    background-color:blue;
+    background-color:grey;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -48,7 +48,13 @@ button:hover {
   width: : 100px;
 }
 h1{
-  color: White
+  color: White;
+  display: inline;
+  color: purple;
+
+}
+img{
+  float: left;
 }
 
 /* Add padding to containers */
@@ -59,4 +65,27 @@ h1{
 span{
   float: right;
   font-weight: lighter;
+}
+ul {
+	list-style-type: none;
+}
+#orgName{
+  display: inline;
+  color: purple;
+  /*float: right;*/
+}
+
+#profile-image{
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+#mediaicon{
+  height: 25px;
+  width: 25px;
+padding-right: .5em;
+
+}
+table,tr, th, td {
+   border: 1px solid black;
 }
