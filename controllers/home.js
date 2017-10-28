@@ -12,7 +12,8 @@ router.get('/', (req, res) => {
 
 router.post('/', (req, res) => {
   res.json({
-    msg: "Successful POST to '/' route"
+    msg: "Successful POST to '/' route",
+    
   });
 });
 
